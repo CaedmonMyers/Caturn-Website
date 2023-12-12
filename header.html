@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+  <link rel="stylesheet" type="text/css" media="all" href="css/base.css" />
+</head>
+
+<body>
+  <section class="top-nav">
+    <div> <a href="https://doorhingeapps.com">
+        <div class="HStack">
+          <div class="logo"> <img src="Images/Caturn Icon.png" alt="DoorHinge Apps Logo" class="headerLogo"> </div>
+          <p class="HSpacer20"></p>
+          <h1 class="navBarTitle"> Caturn </h1>
+        </div>
+      </a> </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button-circle">
+        <div class="menu-button"></div>
+      </div>
+      
+    </label>
+    <ul class="menu">
+      <li> <a href="index.html" class="menuButtonText"> Home </a> </li>
+      <li> <a href="" class="menuButtonText"> Download </a> </li>
+      <li> <a href="about.html" class="menuButtonText"> About </a> </li>
+      <li> <a href="contact.html" class="menuButtonText"> Contact </a> </li>
+      <li> <a href="https://doorhingeapps.com" class="menuButtonText"> Our Apps </a> </li>
+      <li>
+        <div class="HStack">
+            <a href="" class="external"> <img src="Images/Socials/Youtube.svg" class="socialIconMenu"> </a>
+            <a href="" class="external"> <img src="Images/Socials/Tiktok.svg" class="socialIconMenu"> </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <script>
+
+    $(document).on('click', 'a.external', function (event) {
+      event.preventDefault();
+
+      window.open($(this).attr('href'));
+    });
+  </script>
+</body>
+
+</html>
