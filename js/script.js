@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Array.from(link.children).forEach((span, i) => {
                 setTimeout(() => {
                     span.style.textShadow = '5px 5px 15px #9356F7';
-                    span.style.fontSize = '9vw';
+                    span.style.fontSize = '8.2vw';
                     span.style.lineHeight = '50px'; // Adjust to match container height
                 }, i * 70);
             });
