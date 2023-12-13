@@ -27,7 +27,7 @@ h2 {
   font-size: 3em;
   transition: all 400ms ease;
   height: 50px;
-  overflow: hidden;
+  overflow: show;
   line-height: 50px;
   display: inline-block;
 }
