@@ -27,7 +27,12 @@ h2 {
 .noBgTitle {
   font-size: 3em;
   transition: all 400ms ease;
+    height: 50px;
+    overflow: hidden;
+    line-height: 50px; /* should be same as height for vertical centering */
+    display: inline-block; /* or 'block' depending on layout */
 }
+
 
 .horizontalImage {
   width: 40%;

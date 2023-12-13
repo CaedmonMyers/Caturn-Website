@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             Array.from(link.children).forEach((span, i) => {
                 setTimeout(() => {
                     span.style.textShadow = '5px 5px 15px #9356F7';
-                    span.style.fontSize = '9vw'; // Adjust this value as needed
+                    span.style.fontSize = '9vw';
+                    span.style.lineHeight = '50px'; // Adjust to match container height
                 }, i * 70);
             });
         });
@@ -31,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             Array.from(link.children).forEach((span, i) => {
                 setTimeout(() => {
                     span.style.textShadow = 'none';
-                    span.style.fontSize = '6vw'; // Adjust this value as needed
+                    span.style.fontSize = '6vw';
+                    span.style.lineHeight = '50px'; // Adjust to match container height
                 }, i * 70);
             });
         });
