@@ -1,14 +1,26 @@
+@font-face {
+  font-family: 'SF-Pro-Rounded-Bold';
+  src: url('/Fonts/SF-Pro-Rounded-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Rounded-Regular';
+  src: url('/Fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
+}
+
+
+
 h1 {
   color: white;
   font-size: 8vw;
-  font-family: 'SF Pro Rounded';
+  font-family: 'SF-Pro-Rounded-Bold';
   text-shadow: 0px 0px 20px #9356F7;
 }
 
 h2 {
   color: white;
   font-size: 6vw;
-  font-family: 'SF Pro Rounded';
+  font-family: 'SF-Pro-Rounded-Bold';
   text-shadow: 0px 0px 20px #9356F7;
 }
 
@@ -38,7 +50,7 @@ a {
   padding-right: 30%;
   box-shadow: 0px 0px 20px #9356F7;
   transition: all 600ms ease;
-  font-family: 'SF Pro Rounded';
+  font-family: 'SF-Pro-Rounded-Regular';
   font-weight: bold;
   font-size: larger;
 }
@@ -291,9 +303,14 @@ li:hover {
   flex-direction: row;
   list-style-type: none;
   margin: 0;
+  background: #ffffff00;
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 0;
 }
+
+
 
 .menu>li {
   margin: 0 1rem;
