@@ -21,16 +21,15 @@ h2 {
   color: white;
   font-size: 6vw;
   font-family: 'SF-Pro-Rounded-Bold';
-  /*text-shadow: 0px 0px 20px #9356F7;*/
 }
 
 .noBgTitle {
   font-size: 3em;
   transition: all 400ms ease;
-    height: 50px;
-    overflow: hidden;
-    line-height: 50px; /* should be same as height for vertical centering */
-    display: inline-block; /* or 'block' depending on layout */
+  height: 50px;
+  overflow: hidden;
+  line-height: 50px;
+  display: inline-block;
 }
 
 
@@ -55,6 +54,7 @@ h2 {
 .whiteText {
   color: white;
 }
+
 .hoverShadow {
   font-family: 'SF-Pro-Rounded-Bold';
 }
