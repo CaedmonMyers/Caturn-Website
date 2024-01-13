@@ -37,6 +37,12 @@ h2 {
   width: 40%;
 }
 
+.horizontalImagePadding {
+  width: 30%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
 .horizontalText {
   color: white;
   font-family: 'SF-Pro-Rounded-Regular';
