@@ -1,6 +1,16 @@
-// Inline link animations
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.noBgTitle');
+
+    const setFontSize = (span, isHover) => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth < 1000) {
+            // For smaller windows
+            span.style.fontSize = isHover ? '9vw' : '6vw'; // Original sizes
+        } else {
+            // For larger windows
+            span.style.fontSize = isHover ? '55px' : '40px'; // Adjust sizes as needed
+        }
+    };
 
     links.forEach(link => {
         const text = link.textContent;
@@ -13,8 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
             span.style.transition = 'inherit';
             span.style.cursor = 'pointer';
             span.style.textShadow = 'none';
-            // Use vw unit for fontSize
-            span.style.fontSize = '6vw'; // Adjust this value as needed
+
+            // Initial font size setting based on window width
+            setFontSize(span, false);
+
             link.appendChild(span);
         });
 
@@ -22,8 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Array.from(link.children).forEach((span, i) => {
                 setTimeout(() => {
                     span.style.textShadow = '5px 5px 15px #9356F7';
-                    span.style.fontSize = '9vw';
-                    span.style.lineHeight = '50px'; // Adjust to match container height
+                    setFontSize(span, true);
                 }, i * 70);
             });
         });
@@ -32,9 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
             Array.from(link.children).forEach((span, i) => {
                 setTimeout(() => {
                     span.style.textShadow = 'none';
-                    span.style.fontSize = '6vw';
-                    span.style.lineHeight = '50px'; // Adjust to match container height
+                    setFontSize(span, false);
                 }, i * 70);
+            });
+        });
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        links.forEach(link => {
+            Array.from(link.children).forEach(span => {
+                setFontSize(span, false);
             });
         });
     });
